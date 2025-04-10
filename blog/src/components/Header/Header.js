@@ -1,7 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { Search } from 'styled-icons/feather'
 import { H1 } from "../Heading"
+import { IconButton } from '../Button'
 import { Section } from "../Section"
 
 const StyledHeader = styled.header`
@@ -29,7 +31,7 @@ const Header = ({ siteTitle }) => (
     </StyledLink>   
     </Section>
     <Section width={1/12}>
-      Search
+      <IconButton icon={<Search />} />
     </Section>
   </StyledHeader>
 )
